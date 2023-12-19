@@ -1,0 +1,47 @@
+.section {
+  align-items: center;
+  display: flex;
+  height: 760px;
+  position: relative;
+
+  .content {
+    width: 436px;
+
+    h3 {
+      color: var(--vivid-cerise);
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 160%;
+      letter-spacing: 1.5px;
+    }
+
+    h1 {
+      color: var(--ghost-white);
+      font-size: 70.534px;
+      font-weight: 700;
+      letter-spacing: -2.116px;
+      line-height: 100%;
+      padding: 10px 0 17px;
+    }
+
+    summary {
+      color: var(--pale-lavender);
+      font-size: 16px;
+      line-height: 160%;
+      padding-top: 17px;
+
+      &:nth-of-type(2) {
+        padding-bottom: 41px;
+      }
+    }
+  }
+
+  .banner {
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    height: 760px;
+    width: 759px;
+  }
+}

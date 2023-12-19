@@ -1,0 +1,34 @@
+.section {
+  margin: 110px auto 104px;
+
+  div {
+    border-radius: 11.69px;
+    border: 0.731px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    margin: 32px auto 32px;
+    width: fit-content;
+
+    article {
+      align-items: center;
+      border-right: 0.731px solid rgba(255, 255, 255, 0.15);
+      display: flex;
+      flex-direction: column;
+      height: 143px;
+      justify-content: space-between;
+      padding: 40px 50px 34px;
+      width: calc(100% / 3);
+
+      &:last-child {
+        border-right: none;
+      }
+
+      h3 {
+        color: var(--white);
+        font-size: 17px;
+        font-weight: 400;
+        letter-spacing: -0.51px;
+        line-height: 160%;
+      }
+    }
+  }
+}

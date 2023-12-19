@@ -1,0 +1,186 @@
+:root {
+  --background-color: #03031b;
+  --white: #fff;
+
+  --slate-gray: #9897a4;
+  --ghost-white: #fbfaff;
+  --pale-lavender: #bab9cd;
+
+  --bright-pink: #f25385;
+
+  --vivid-cerise: #f03f77;
+  --vivid-cerise-click: #ce2e70;
+  --vivid-cerise-hover: #ac1f68;
+
+  --crimson: #141425;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--background-color);
+  font-family: 'Work Sans' !important;
+  min-height: 100vh;
+  position: relative;
+
+  .gradient-layout {
+    background: radial-gradient(51.37% 49.19% at 50% 50%, #5c308e 0%, rgba(62, 22, 108, 0) 100%);
+    border-radius: 873.428px;
+    height: 873px;
+    opacity: 0.68;
+    position: absolute;
+    top: -550px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 873px;
+    z-index: -1;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+section {
+  margin: auto;
+  max-width: 1098px;
+}
+
+h2 {
+  color: var(--white);
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: -1.65px;
+  text-align: center;
+}
+
+input {
+  font-family: 'Work Sans';
+}
+
+button {
+  border: none;
+  color: var(--white);
+  font-family: 'Work Sans';
+  font-size: 17px;
+  letter-spacing: 0.85px;
+  padding: 21px 50px;
+  transition: 0.2s ease;
+
+  &.filled {
+    background-color: var(--vivid-cerise);
+    box-shadow: 0px 9px 22px 0px rgba(240, 63, 119, 0.32);
+    border-radius: 104px;
+    font-weight: 700;
+    line-height: 17px;
+
+    &:hover {
+      background-color: var(--vivid-cerise-hover);
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: var(--vivid-cerise-click);
+      transform: translateY(1.5px);
+    }
+  }
+
+  &.outlined {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    border-radius: 71px;
+    display: block;
+    margin: 32px auto 0;
+    opacity: 0.6;
+    padding: 6px 14px;
+
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    &:active {
+      transform: translateY(1.5px);
+    }
+  }
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../public/fonts/Inter-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../public/fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../public/fonts/WorkSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../public/fonts/WorkSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../public/fonts/WorkSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../public/fonts/WorkSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
