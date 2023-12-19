@@ -1,0 +1,38 @@
+.footer {
+  max-width: 700px;
+  margin: 0 auto 63px;
+
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+
+    li a {
+      align-items: center;
+      color: var(--ghost-white);
+      display: flex;
+      font-size: 15px;
+      gap: 5px;
+    }
+  }
+
+  summary {
+    align-items: center;
+    color: var(--ghost-white);
+    display: flex;
+    font-size: 11px;
+    height: 65px;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  .policy {
+    color: var(--ghost-white);
+    font-size: 11px;
+    height: 32px;
+    letter-spacing: 0.4px;
+    line-height: 32px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,30 @@
+.article {
+  background: linear-gradient(180deg, #141425 0%, rgba(20, 20, 37, 0) 100%);
+  border-radius: 16px;
+  min-height: 376px;
+  padding: 40px 32px 0;
+  width: calc((100% - 40px) / 3);
+
+  h3 {
+    color: var(--ghost-white);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 130%;
+    padding-top: 32px;
+  }
+
+  p {
+    color: var(--pale-lavender);
+    font-size: 17px;
+    letter-spacing: -0.51px;
+    line-height: 160%;
+    padding-top: 16px;
+  }
+
+  a {
+    color: var(--bright-pink);
+    font-size: 17px;
+    padding-top: 20px;
+    width: fit-content;
+  }
+}
