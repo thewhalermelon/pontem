@@ -98,7 +98,7 @@ const Leaderboard: React.FC<IProps> = () => {
           <h1>Early User Program</h1>
           <summary>
             For those who have joined our early user program, you have the exclusive opportunity to access the beta
-            version. You'll be the first to experience all the new features and products from Pontem.
+            version. You&apos;ll be the first to experience all the new features and products from Pontem.
           </summary>
           <summary>
             By providing your valuable feedback, you have the power to shape our products according to your vision. You
@@ -138,9 +138,9 @@ const Leaderboard: React.FC<IProps> = () => {
           <div className={styles.top}>
             <h3>Get early access</h3>
             <h3>by joining wait list</h3>
-            <summary>Once you're in, you can climb the queue by inviting</summary>
+            <summary>Once you&apos;re in, you can climb the queue by inviting</summary>
             <summary>your friends. The closer you are to the top, the</summary>
-            <summary>more likely and sooner you'll get access.</summary>
+            <summary>more likely and sooner you&apos;ll get access.</summary>
             <input placeholder='Email' />
             <Button content='JOIN' classes='filled' />
           </div>
