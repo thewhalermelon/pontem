@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Logo from '@/public/images/Logo.svg';
+import Logo from '@/public/images/logo.svg';
 import Github from '@/public/images/github.svg';
 import Twitter from '@/public/images/twitter.svg';
 import Telegram from '@/public/images/telegram.svg';
