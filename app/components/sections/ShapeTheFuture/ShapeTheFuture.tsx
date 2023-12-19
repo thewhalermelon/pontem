@@ -11,7 +11,7 @@ const ShapeTheFuture: React.FC<IProps> = () => {
         <h1>Early User Program</h1>
         <summary>
           For those who have joined our early user program, you have the exclusive opportunity to access the beta
-          version. You'll be the first to experience all the new features and products from Pontem.
+          version. You&apos;ll be the first to experience all the new features and products from Pontem.
         </summary>
         <summary>
           By providing your valuable feedback, you have the power to shape our products according to your vision. You

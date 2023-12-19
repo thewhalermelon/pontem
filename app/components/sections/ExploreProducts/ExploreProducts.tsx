@@ -48,7 +48,7 @@ const PONTEM_PRODUCTS = [
 const ExploreProducts: React.FC<IProps> = () => {
   return (
     <section className={styles.section}>
-      <h2>Explore Pontem's Products</h2>
+      <h2>Explore Pontem&apos;s Products</h2>
       <summary>
         Discover our range of products by clicking on each one. You will be directed to the official product page.
       </summary>

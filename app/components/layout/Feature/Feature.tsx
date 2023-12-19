@@ -27,8 +27,8 @@ const Feature: React.FC<IProps> = ({ date, title, version, feature, image }) => 
           </div>
         </div>
         <ul className={styles.features}>
-          {feature.map((item) => {
-            return <li>{item}</li>;
+          {feature.map((item, index) => {
+            return <li key={index}>{item}</li>;
           })}
         </ul>
       </div>
