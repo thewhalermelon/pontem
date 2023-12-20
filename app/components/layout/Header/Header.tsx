@@ -45,7 +45,7 @@ const Header: React.FC<IProps> = () => {
         <Link href={'https://twitter.com'} target='_blank'>
           <Image src={Twitter} alt='Twitter' />
         </Link>
-        <Link href={'https://twitter.com'} target='_blank'>
+        <Link href={'https://web.telegram.org/'} target='_blank'>
           <Image src={Telegram} alt='Twitter' />
         </Link>
       </div>

@@ -1,14 +1,28 @@
+import { apiRequest } from '@/app/utils/apiUtils';
+
 import styles from '@/app/explore/page.module.scss';
 
 import PontemLinear from '@/public/images/pontem-linear.svg';
 import PontemLinearFilled from '@/public/images/pontem-linear-filled.svg';
+
+import featureService, { Features } from '@/app/services/featureService';
 
 import Button from '@/app/components/common/Button';
 import Feature from '@/app/components/layout/Feature/Feature';
 
 interface IProps {}
 
-const Explore: React.FC<IProps> = () => {
+async function getFeature(): Promise<any> {
+  const res = await featureService.getFeatures();
+
+  return res;
+}
+
+const Explore: React.FC<IProps> = async () => {
+  const features = await getFeature();
+
+  console.log('features: ', features.record.features);
+
   return (
     <>
       <div className='gradient-layout' />
@@ -49,8 +63,8 @@ const Explore: React.FC<IProps> = () => {
             'Added display in USD for ALT, THL, ABEL',
             'Added sorting of pools by TVL',
             'Removed "Normal Gas"',
-            'Updated text on LS banner"',
-            'Fixed input bugs"',
+            'Updated text on LS banner',
+            'Fixed input bugs',
           ]}
           image={PontemLinearFilled}
         />
