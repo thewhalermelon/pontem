@@ -17,7 +17,7 @@ const Feature: React.FC<IProps> = ({ date, title, version, feature, image }) => 
     <article className={styles.article}>
       <div className={styles.content}>
         <div className={styles.header}>
-          <Image src={image} alt='pontem' />
+          <Image src={image} alt='pontem' width={64} height={64} />
           <div className={styles.title}>
             <p>{date}</p>
             <h3>

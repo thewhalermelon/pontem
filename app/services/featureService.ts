@@ -1,4 +1,4 @@
-import { apiRequest } from '../utils/apiUtils';
+import { apiRequest } from '@/app/utils/apiUtils';
 
 export interface Feature {
   date: string;
@@ -9,12 +9,19 @@ export interface Feature {
 }
 
 export interface Features {
-  features: Feature[];
+  record: {
+    features: Feature[];
+  };
+  metadata: {
+    id: string;
+    private: Boolean;
+    createdAt: string;
+  };
 }
 
 const featureService = {
-  async getFeatures(): Promise<Features[]> {
-    const response = await apiRequest.get<Features[]>('/6582a65d1f5677401f10b572');
+  async getFeatures(): Promise<Features> {
+    const response = await apiRequest.get<Features>('/6582a65d1f5677401f10b572');
     return response.data;
   },
   async getUserById(id: number): Promise<Features> {
